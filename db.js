@@ -20,12 +20,13 @@ const adminSchema = new Schema({
 const courseSchema = new Schema({
   title: String,
   description: String,
+  imageUrl: String,
   price: Number,
-  creatorId: ObjectId,
-  imageUrl: String 
+  creatorId: ObjectId
+  
 })
 const purchaseSchema = new Schema({
-  cousreId: ObjectId,
+  courseId: ObjectId,
   userId: ObjectId
 })
 
